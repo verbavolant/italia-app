@@ -5,6 +5,7 @@ import { Action } from "../actions/types";
 import { ErrorState } from "../store/reducers/error";
 import { LoadingState } from "../store/reducers/loading";
 import { OnboardingState } from "../store/reducers/onboarding";
+import { PinLoginState } from "../store/reducers/pinlogin";
 import { ProfileState } from "../store/reducers/profile";
 import { SessionState } from "../store/reducers/session";
 import { AppState } from "./appState";
@@ -24,4 +25,5 @@ export type GlobalState = Readonly<{
   session: SessionState;
   onboarding: OnboardingState;
   profile: ProfileState;
+  pinlogin: PinLoginState;
 }>;

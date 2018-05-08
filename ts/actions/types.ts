@@ -15,6 +15,7 @@ import { ApplicationActions } from "../store/actions/application";
 import { APP_STATE_CHANGE_ACTION } from "../store/actions/constants";
 import { ErrorActions } from "../store/actions/error";
 import { OnboardingActions } from "../store/actions/onboarding";
+import { PinloginActions } from "../store/actions/pinlogin";
 import { ProfileActions } from "../store/actions/profile";
 import { SessionActions } from "../store/actions/session";
 
@@ -31,6 +32,7 @@ export type Action =
   | NavigationAction
   | SessionActions
   | OnboardingActions
+  | PinloginActions
   | ProfileActions
   | ErrorActions;
 

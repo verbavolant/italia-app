@@ -7,6 +7,7 @@ import { all, Effect, fork } from "redux-saga/effects";
 
 import mainSaga from "./main";
 import onboardingSaga from "./onboarding";
+import pinloginSaga from "./pinlogin";
 import profileSaga from "./profile";
 import sessionSaga from "./session";
 
@@ -25,6 +26,7 @@ export default function* root(): Iterator<Effect> {
   yield all([
     fork(sessionSaga),
     fork(onboardingSaga),
+    fork(pinloginSaga),
     fork(mainSaga),
     fork(profileSaga),
     fork(networkEventsListenerSaga, connectionMonitorParameters)

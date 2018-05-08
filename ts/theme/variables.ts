@@ -38,6 +38,7 @@ const customVariables = Object.assign(materialVariables, {
   brandDanger: "#CC3333",
   brandLightGray: "#E6E9F2",
   brandDarkGray: "#5C6F82",
+  brandWhite: "#FFFFFF",
 
   // Font
   ...makeFontStyleObject(Platform.select),
@@ -66,6 +67,7 @@ const customVariables = Object.assign(materialVariables, {
   contentPadding: 24,
   contentBackground: "#FFFFFF",
   contentAlternativeBackground: "#F5F6F7",
+  contentPrimaryBackground: "#0073E6",
 
   // Footer
   footerBackground: "#FFFFFF",

@@ -11,6 +11,7 @@ import { Action } from "../actions/types";
 import errorReducer from "../store/reducers/error";
 import loadingReducer from "../store/reducers/loading";
 import onboardingReducer from "../store/reducers/onboarding";
+import pinloginReducer from "../store/reducers/pinlogin";
 import profileReducer from "../store/reducers/profile";
 import sessionReducer from "../store/reducers/session";
 import appStateReducer from "./appState";
@@ -42,7 +43,8 @@ const reducers: ReducersMapObject<GlobalState, Action> = {
   // DATA
   session: sessionReducer,
   onboarding: onboardingReducer,
-  profile: profileReducer
+  profile: profileReducer,
+  pinlogin: pinloginReducer
 };
 
 export default reducers;
